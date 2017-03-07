@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    background: #EFEFEF;
+}
+
+header {
+    background-color: #66ff66;
+    background: -moz-linear-gradient(to bottom, #182d3f 0%, #33b79f 100%);
+    background: -webkit-linear-gradient(to bottom, #182d3f 0%, #33b79f 100%);
+    background: linear-gradient(to bottom, #182d3f 0%, #33b79f 100%);
+    height: 75vh;
+    min-height: 300px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    font-family: sans-serif;
+    position: fixed;
+    top: 0;
+    z-index: -10;
+}
+
+header h1 {
+    padding-top: 35vh;
+    padding-bottom: 25px;
+    margin: 0;
+    font-size: 28px;
+    color: #fff;
+}
+
+header a {
+    background: #2c9386 !important;
+    color: #fff !important;
+    border: 4px double rgba(255, 255, 255, 0.71) !important;
+}
+
+@keyframes btn-init {
+  0% {
+      transform: scale(1,1);
+  }
+  30% {
+    transform: scale(1.1,1.1);
+  }
+  100% {
+      transform: scale(1,1);
+  }
+}
+
+@keyframes btn-hover {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+      transform: scale(0.9,0.9);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+@keyframes span-slice {
+    0% {
+        vertical-align: -0px;
+    }
+    20% {
+      vertical-align: 2px;
+    }
+    30% {
+      vertical-align: -1px;
+    }
+    100% {
+        vertical-align: -0px;
+    }
+}
+
+header h1 span {
+  cursor: pointer;
+}
+
+.slice-anim1{
+  cursor: pointer;
+  animation: span-slice 0.61s infinite;
+  animation-iteration-count: 1
+}
+.slice-anim2{
+  cursor: pointer;
+  animation: span-slice 0.6s infinite;
+  animation-iteration-count: 2
+}
+.slice-anim3{
+  cursor: pointer;
+  animation: span-slice 0.59s infinite;
+  animation-iteration-count: 3
+}
+.slice-anim4{
+  cursor: pointer;
+  animation: span-slice 0.58s infinite;
+  animation-iteration-count: 4
+}
+.slice-anim5{
+  cursor: pointer;
+  animation: span-slice 0.57s infinite;
+  animation-iteration-count: 5
+}
+.slice-anim6{
+  cursor: pointer;
+  animation: span-slice 0.56s infinite;
+  animation-iteration-count: 6
+}
+.slice-anim7{
+  cursor: pointer;
+  animation: span-slice 0.55s infinite;
+  animation-iteration-count: 7
+}
+.slice-anim8{
+  cursor: pointer;
+  animation: span-slice 0.54s infinite;
+  animation-iteration-count: 8
+}
+.slice-anim9{
+  cursor: pointer;
+  animation: span-slice 0.53s infinite;
+  animation-iteration-count: 9
+}
+.slice-anim10{
+  cursor: pointer;
+  animation: span-slice 0.52s infinite;
+  animation-iteration-count: 10
+}
+
+header a{
+  transition-property: background;
+  transition-duration: 500ms;
+  animation-name: btn-init;
+  animation-duration: 900ms;
+}
+
+header a i {
+
+    -moz-transform: rotate(-90deg);
+    /* Для Firefox */
+    -ms-transform: rotate(-90deg);
+    /* Для IE */
+    -webkit-transform: rotate(-90deg);
+    /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(-90deg);
+    /* Для Opera */
+    transform: rotate(-90deg);
+    margin: 5px;
+}
+header a:hover {
+    background: #125f54 !important;
+    animation-name: btn-hover;
+    animation-duration: 600ms;
+}
+
+header .start {
+    margin: 25px;
+    text-decoration: none;
+    color: #fff;
+    width: 160px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 8px;
+    border: 5px #FFF solid;
+}
+
+main {
+    margin-top: 80vh;
+    z-index: 100;
+    background: #EFEFEF;
+}
+
+.default-text-shadow {
+    text-shadow: 1px 1px 2px black;
+}
